@@ -1,0 +1,15 @@
+UsuarioInscripcionBundle_homepage:
+    pattern: /
+    defaults: { _controller: UsuarioInscripcionBundle:Default:index }
+otracosa:
+    pattern: /otracosa
+    defaults: { _controller: UsuarioInscripcionBundle:Default:otracosa }
+inscripcion_crear:
+    pattern: /crear
+    defaults: { _controller: UsuarioInscripcionBundle:Inscripcion:crearExpediente}
+formulario:
+    pattern: /formulario
+    defaults: { _controller: UsuarioInscripcionBundle:Inscripcion:formulario}
+formulario_listar:
+    pattern: /listar
+    defaults: { _controller: UsuarioInscripcionBundle:Inscripcion:listar} 

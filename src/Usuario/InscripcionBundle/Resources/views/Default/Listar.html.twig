@@ -1,0 +1,21 @@
+{%extends 'UsuarioInscripcionBundle:Default:index.html.twig'%}
+{%block title%}Expedientes en la Base de Datos{%endblock%}
+{%block body%}
+<h1>Lista de Expedientes </h1>
+<ul>
+       {%for expediente in expedientes %}
+         <li>{{ expediente.id}}</li>
+         <li>Fecha de creacion: {{ expediente.fecha| date('d-m-Y') }}</li>
+         <li>{{ expediente.alumno.id}}</li>
+         <li>{{ expediente.director.id}} </li>
+       {%endfor%}
+       {# {%for alumno in expedientes%}
+        <li>{{alumno.dni}}</li>
+        <li>{{alumno.lu}}</li>
+        <li>{{alumno.apellido}}</li>
+        <li>{{alumno.direccion}}</li>        
+        <li>{{alumno.telefono}}</li>
+        
+        {%endfor%}#}
+</ul>
+{%endblock%}
